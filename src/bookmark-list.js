@@ -2,8 +2,6 @@ import $ from 'jquery';
 import api from './api';
 import store from './store';
 
-
-
 function generateBookmarkElement(mark) {
   let dragon = 'Dragons';
   if (mark.rating === 1) {
@@ -112,7 +110,6 @@ function render() {
   renderError();
 }
 
-
 function getIdFromElement(item) {
   return $(item)
     .closest('.bookmark')
@@ -149,7 +146,6 @@ function handleFilterSubmit() {
   });
 }
 
-
 function handleVisitSiteClicked() {
   $('main').on('click', '.visit-site', function (event) {
     openTab(event.currentTarget);
@@ -161,9 +157,11 @@ function openTab(mark) {
   let link = store.findById(id);
   window.open(link.url, '_blank');
 }
+
 function toggleAddHtml() {
   store.store.adding = !store.store.adding;
 }
+
 function handleAddClicked() {
   $('main').on('click', '.add', function () {
     toggleAddHtml();
