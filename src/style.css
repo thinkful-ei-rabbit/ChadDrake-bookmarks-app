@@ -1,0 +1,41 @@
+.bookmark{
+    border: 1px solid grey;
+    max-width: 600px;
+    padding: 20px
+}
+.buttons-container{
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.buttons{
+    margin-right: 20;
+}
+.selection-bar{
+    border: 1px solid grey;
+    max-width: 600px;
+    padding: 20px;
+    
+}
+.group {
+    display:flex;
+    justify-content: space-between;
+}
+
+.details {
+    border: 1px solid grey;
+    max-width: 600px;
+    padding: 20px;
+    
+}
+
+.err-message{
+    border: 1px solid grey;
+    max-width: 600px;
+    padding: 20px;
+    font-size: large;
+    color: red;
+}
